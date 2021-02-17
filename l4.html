@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr, th, td {
+        border: 1px solid black;
+        }
+       </style>
+    <script src="./l4.js"></script>
+    <link rel="stylesheet" href="./l4.css">
+</head>
+<body>
+    <form method="POST" onsubmit=" event.preventDefault(); input()" id="4"> 
+        <h3>Наименование:</h3>
+        <input type="text" id="1"/>
+        <h3>Стоимость:</h3>
+        <input type="text" id="2"/>
+        <input type="submit" value="Добавить"/> 
+    </form>
+    <br/>
+    <table>
+        <tbody id="3">
+            <tr>
+                <th>Наименование</th>
+                <th>Стоимость</th>
+            </tr>
+            <tr class= "highlight1" onclick="output(event)">
+                <td>тетрадь а4</td>
+                <td>30</td>
+            </tr>
+            <tr class= "highlight1" onclick="output(event)" >
+                <td>ручка</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+    </table>    
+    <br/>
+    <table>
+        <tbody id= "5">
+            <tr>
+                <th>Наименование</th>
+                <th>Стоимость</th>
+            </tr>
+        </tbody>
+    </table>    
+    <input type="submit" value="Рассчитать стоимость" onclick="oc()"/> 
+</body>
+</html>
